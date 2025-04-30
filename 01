@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | [あなたの名前]</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #555;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[あなたの名前]</h1>
+    <nav>
+      <a href="#works">作品</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#sns">SNS</a>
+    </nav>
+  </header>
+
+  <section id="works">
+    <h2>作品</h2>
+    <div class="project">
+      <h3>作品タイトル1</h3>
+      <p>作品の簡単な説明や使用メディアなど。</p>
+    </div>
+    <div class="project">
+      <h3>作品タイトル2</h3>
+      <p>作品の簡単な説明や使用メディアなど。</p>
+    </div>
+    <!-- 他の作品も同様に追加 -->
+  </section>
+
+  <section id="profile">
+    <h2>プロフィール</h2>
+    <p>[あなたの略歴やアーティストステートメントなどをここに]</p>
+  </section>
+
+  <section id="sns">
+    <h2>SNS</h2>
+    <ul>
+      <li><a href="https://instagram.com/youraccount" target="_blank">Instagram</a></li>
+      <li><a href="https://twitter.com/youraccount" target="_blank">Twitter / X</a></li>
+      <!-- 他のSNSも追加可能 -->
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 [あなたの名前]. All rights reserved.
+  </footer>
+</body>
+</html>
