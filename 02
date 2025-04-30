@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORK | YUIKA SADA </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif; /* 小ぶりなゴシック代替 */
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-family: "American Typewriter", serif;
+      font-weight: 600; /* Semibold 相当 */
+    }
+    .menu-button {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .menu {
+      position: absolute;
+      top: 4.5rem;
+      right: 2rem;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+    }
+    .menu a {
+      margin: 0.5rem 0;
+      text-decoration: none;
+      color: #555;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .menu a:hover {
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YUIKA SADA</h1>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+      <a href="#works">WORK</a>
+      <a href="about.html">ABOUT</a>
+    </div>
+  </header>
+
+  <section id="works">
+    <h2>WORK</h2>
+    <div class="project">
+      <h3>作品タイトル1</h3>
+      <p>作品の簡単な説明や使用メディアなど。</p>
+      <img src="/mnt/data/IMG_3239.PNG" alt="作品画像">
+    </div>
+    <div class="project">
+      <h3>作品タイトル2</h3>
+      <p>作品の簡単な説明や使用メディアなど。</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 YUIKA SADA. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
